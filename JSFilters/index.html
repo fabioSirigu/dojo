@@ -1,0 +1,54 @@
+<!-- <aside>
+In questo esercizio post corso creeremo una interfaccia per applicare dei filtri css in tempo reale ad una immagine.
+
+</aside> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./style.css">
+      <!-- fontawesome -->
+      <script src="https://kit.fontawesome.com/641e4c79bb.js" crossorigin="anonymous"></script>
+      <title>Document</title>
+</head>
+
+<body>
+      <div class="container">
+            <div class="content">
+                  <div class="icon">
+                        <input type="file" id="fileElem" multiple accept="image/*" style="display:none" />
+                        <i class="fa-solid fa-cloud-arrow-up" id="fileSelect"></i>
+                  </div>
+                  <div id="fileList" class="fileList">
+                        <p>No files selected!</p>
+                  </div>
+                  <div class="filter-list">
+                        <div class="filter">
+                              <label for="blur">Blur</label>
+                              <input type="range" name="blur" id="blur" min="0" max="10">
+                        </div>
+                        <div class="filter">
+                              <label for="brightness">Brightness</label>
+                              <input type="range" name="brightness" id="brightness" min="0" max="100">
+                        </div>
+                        <div class="filter">
+                              <label for="grayscale">Grayscale</label>
+                              <input type="range" name="grayscale" id="grayscale" min="0" max="100">
+                        </div>
+                        <div class="filter">
+                              <label for="opacity">Opacity</label>
+                              <input type="range" name="opacity" id="opacity" min="0" max="100g">
+                        </div>
+                  </div>
+            </div>
+
+      </div>
+      <!-- JS -->
+      <script src="./main.js"></script>
+</body>
+
+</html>
